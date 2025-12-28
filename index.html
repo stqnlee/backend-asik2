@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather & News Explorer</h1>
+        <div class="search-area">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button id="getBtn">Search</button>
+        </div>
+
+        <div id="dashboard" class="hidden">
+            <div class="weather-box">
+                <h2 id="cityDisplay"></h2>
+                <div class="temp-main"><span id="temp"></span>°C</div>
+                <p id="weatherDesc"></p>
+                <div class="stats-grid">
+                    <div class="stat">Feels like: <span id="feels"></span>°C</div>
+                    <div class="stat">Wind: <span id="wind"></span> m/s</div>
+                    <div class="stat">Rain (3h): <span id="rain"></span> mm</div>
+                    <div class="stat">Coords: <span id="coords"></span></div>
+                </div>
+            </div>
+
+            <div class="news-box">
+                <h3>Local News</h3>
+                <div id="newsList"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
